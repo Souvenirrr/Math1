@@ -5,21 +5,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/icHome"
+            android:id="@+id/home"
             android:icon="@drawable/ic_action_home"
-            android:title="@string/menu_home" />
+            android:title="Home" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_action_profile"
+            android:title="Profile" />
     </group>
 
     <item android:title="Controls">
         <menu>
             <item
-                android:id="@+id/icSettings"
+                android:id="@+id/settings"
                 android:icon="@drawable/ic_action_settings"
                 android:title="Settings" />
+
             <item
-                android:id="@+id/icLogout"
+                android:id="@+id/logout"
                 android:icon="@drawable/ic_action_logout"
                 android:title="Logout" />
         </menu>
     </item>
+
+
 </menu>

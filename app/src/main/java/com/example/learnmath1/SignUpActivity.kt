@@ -55,7 +55,7 @@ class SignUpActivity : AppCompatActivity() {
                 if (task.isSuccessful){
                     val user = auth.currentUser
                     user?.sendEmailVerification()
-                        ?.addOnCompleteListener { task ->
+                        ?.addOnCompleteListener {
                             if (task.isSuccessful) {
                                 startActivity(Intent(this, MainActivity::class.java))
                                 finish()

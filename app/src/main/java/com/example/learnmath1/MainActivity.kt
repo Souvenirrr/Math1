@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         btnLogin.setOnClickListener {
-            startActivity(Intent(this, HomeActivuty::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             finish()
         }
 
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
-            startActivity(Intent(this, HomeActivuty::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             finish()
         } else {
             Toast.makeText(baseContext, "Login fail", Toast.LENGTH_LONG).show()
