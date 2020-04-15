@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "298134378114",
+    "firebase_url": "https://learn-math-1.firebaseio.com",
+    "project_id": "learn-math-1",
+    "storage_bucket": "learn-math-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298134378114:android:26d025bd0a0f7351c5069b",
+        "android_client_info": {
+          "package_name": "com.example.learnmath1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298134378114-rl8crvj0v256qjbbt43fc7d96fm7auod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbtS5sT40Tcs6TMu89ve-X4XEC7_1k9Wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298134378114-rl8crvj0v256qjbbt43fc7d96fm7auod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
