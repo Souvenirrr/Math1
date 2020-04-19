@@ -1,4 +1,4 @@
-package com.example.learnmath1
+package com.example.learnmath1.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,10 +7,12 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.FragmentTransaction
+import com.example.learnmath1.R
+import com.example.learnmath1.fragment.HomeFragment
+import com.example.learnmath1.fragment.ProfileFragment
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.app_bar_main.*
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -21,6 +23,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        toolBar.setNavigationIcon(R.drawable.ic_menu_white_24dp)
         setSupportActionBar(toolBar)
         val actionBar = supportActionBar
         actionBar?.title = "Navigation Drawer"
@@ -40,7 +43,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         homeFragment = HomeFragment()
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.frameLayout, homeFragment)
+            .replace(R.id.homeScreen, homeFragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
             .commit()
     }
@@ -51,15 +54,16 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 homeFragment = HomeFragment()
                 supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout, homeFragment)
+                    .replace(R.id.homeScreen, homeFragment)
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                     .commit()
             }
             R.id.profile -> {
-                profileFragment = ProfileFragment()
+                profileFragment =
+                    ProfileFragment()
                 supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout, homeFragment)
+                    .replace(R.id.homeScreen, profileFragment)
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                     .commit()
             }
