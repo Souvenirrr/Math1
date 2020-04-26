@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
+
         auth.signInWithEmailAndPassword(edtEmail.text.toString(), edtPass.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
