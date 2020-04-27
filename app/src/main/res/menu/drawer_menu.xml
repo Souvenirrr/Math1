@@ -3,28 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group>
         <item
             android:id="@+id/home"
             android:icon="@drawable/ic_action_home"
-            android:title="Home" />
+            android:title="@string/menu_home" />
         <item
             android:id="@+id/profile"
             android:icon="@drawable/ic_action_profile"
-            android:title="Profile" />
+            android:title="@string/menu_profile" />
     </group>
 
-    <item android:title="Controls">
+    <item android:title="@string/menu_title_control">
         <menu>
             <item
                 android:id="@+id/settings"
                 android:icon="@drawable/ic_action_settings"
-                android:title="Settings" />
+                android:title="@string/menu_settings" />
 
             <item
                 android:id="@+id/logout"
                 android:icon="@drawable/ic_action_logout"
-                android:title="Logout" />
+                android:title="@string/menu_logout" />
         </menu>
     </item>
 

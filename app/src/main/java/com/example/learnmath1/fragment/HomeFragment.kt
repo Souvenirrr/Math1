@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.learnmath1.R
 import com.example.learnmath1.activity.QuestionActivity
-import com.example.learnmath1.adapter.CustomAdapter
+import com.example.learnmath1.adapter.QuestionListAdapter
 import com.example.learnmath1.model.Problem
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -38,7 +38,7 @@ class HomeFragment : Fragment() {
         problem.add(Problem("Đề số 7"))
         problem.add(Problem("Đề số 8"))
 
-        val adapter = CustomAdapter(context,problem, onClickListener)
+        val adapter = QuestionListAdapter(context,problem, onClickListener)
 
         rvProblem.adapter = adapter
     }

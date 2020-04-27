@@ -4,6 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.QuestionActivity">
+    tools:context=".activity.QuestionActivity"
+    android:id="@+id/questionActivity">
 
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

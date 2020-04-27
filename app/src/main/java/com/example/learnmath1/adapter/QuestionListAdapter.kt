@@ -10,12 +10,12 @@ import com.example.learnmath1.R
 import com.example.learnmath1.fragment.OnClickListener
 import com.example.learnmath1.model.Problem
 
-class CustomAdapter(
+class QuestionListAdapter(
     private val context: Context?,
     private val problemList: ArrayList<Problem>,
     private val onClickListener: OnClickListener
 ) :
-    RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+    RecyclerView.Adapter<QuestionListAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val mathID = itemView.findViewById(R.id.mathID) as TextView
     }
