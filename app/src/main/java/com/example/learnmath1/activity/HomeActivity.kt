@@ -26,7 +26,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toolBar.setNavigationIcon(R.drawable.ic_menu_white_24dp)
         setSupportActionBar(toolBar)
         val actionBar = supportActionBar
-        actionBar?.title = "Navigation Drawer"
+        actionBar?.title = "Đề bài"
 
         val drawerToggle: ActionBarDrawerToggle = object : ActionBarDrawerToggle(
             this, drawerLayout, toolBar, (R.string.open), (R.string.close)
