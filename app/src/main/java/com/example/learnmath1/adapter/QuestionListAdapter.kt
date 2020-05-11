@@ -11,7 +11,6 @@ import com.example.learnmath1.fragment.OnClickListener
 import com.example.learnmath1.model.Problem
 
 class QuestionListAdapter(
-    private val context: Context?,
     private val problemList: ArrayList<Problem>,
     private val onClickListener: OnClickListener
 ) :

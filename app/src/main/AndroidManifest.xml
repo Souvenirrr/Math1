@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.QuestionActivity"></activity>
-        <activity android:name=".test" />
         <activity android:name=".activity.SignUpActivity" />
         <activity
             android:name=".activity.HomeActivity"

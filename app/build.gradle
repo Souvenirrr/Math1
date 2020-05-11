@@ -58,4 +58,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
     implementation 'com.google.firebase:firebase-auth:19.3.0'
     implementation 'com.google.firebase:firebase-firestore-ktx:21.4.3'
+    implementation 'com.beust:klaxon:5.0.1'
 }
