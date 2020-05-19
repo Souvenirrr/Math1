@@ -5,7 +5,7 @@ import com.beust.klaxon.Klaxon
 private val klaxon = Klaxon()
 
 data class Question(
-    val answer: ArrayList<Answer>,
+    val answer: Answer,
     val question: String
 ) {
     public fun toJson() = klaxon.toJsonString(this)

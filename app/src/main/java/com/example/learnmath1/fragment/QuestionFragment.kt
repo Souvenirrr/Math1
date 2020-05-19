@@ -1,6 +1,7 @@
 package com.example.learnmath1.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import com.example.learnmath1.datasource.FirebaseHandle
 import com.example.learnmath1.model.ListID
 import com.example.learnmath1.model.Question
 import kotlinx.android.synthetic.main.fragment_question.*
+import java.lang.Exception
 
 /**
  * A simple [Fragment] subclass.
@@ -30,12 +32,11 @@ class QuestionFragment : Fragment(), DataListener {
     }
 
     override fun onLoaded(questions: List<Question>) {
-        //tvQuestion.text = listID.data[0].question
-
+        Log.d("question", questions.toString())
+        TODO("Update UI")
     }
 
-
-    override fun onFail() {
+    override fun onFail(exception: Exception) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

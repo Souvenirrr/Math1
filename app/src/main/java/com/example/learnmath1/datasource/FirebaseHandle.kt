@@ -2,9 +2,6 @@ package com.example.learnmath1.datasource
 
 import android.content.ContentValues
 import android.util.Log
-import com.beust.klaxon.JsonObject
-import com.example.learnmath1.model.Content
-import com.example.learnmath1.model.ListID
 import com.example.learnmath1.model.Question
 import com.google.firebase.firestore.QueryDocumentSnapshot
 import com.google.firebase.firestore.ktx.firestore
@@ -27,21 +24,20 @@ class FirebaseHandle(private val dataListener: DataListener) {
                     }
                 }
                 val data = myDocument!!["data"] as ArrayList<*>
-                data.map { it ->
+                data.map {
                     val item = Gson().toJson(it).toString()
-                    Log.d("ddd", item)
                     questions.add(Question.fromJson(item)!!)
                 }
-                Log.d("question ", questions.toString())
-                //dataListener.onLoaded(ListID(data))
+                dataListener.onLoaded(questions)
             }
             .addOnFailureListener { exception ->
                 Log.d(ContentValues.TAG, "Error getting documents: ", exception)
+                dataListener.onFail(exception)
             }
     }
 }
 
 interface DataListener {
     fun onLoaded(questions: List<Question>)
-    fun onFail()
+    fun onFail(exception: Exception)
 }
