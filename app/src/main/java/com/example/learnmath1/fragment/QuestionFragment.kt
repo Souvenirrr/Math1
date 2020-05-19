@@ -1,22 +1,22 @@
 package com.example.learnmath1.fragment
 
-import android.content.ContentValues.TAG
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.learnmath1.R
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+import com.example.learnmath1.datasource.DataListener
+import com.example.learnmath1.datasource.FirebaseHandle
+import com.example.learnmath1.model.ListID
+import com.example.learnmath1.model.Question
 import kotlinx.android.synthetic.main.fragment_question.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class QuestionFragment : Fragment() {
-    private val db = Firebase.firestore
+class QuestionFragment : Fragment(), DataListener {
+    private val firebaseHandle: FirebaseHandle = FirebaseHandle(this)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,10 +26,16 @@ class QuestionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        db.collection("problem").get().addOnSuccessListener {
-            for (result in it) {
-                Log.d(TAG, "${result.data}")
-            }
-        }
+        firebaseHandle.getDataByID("5ol2zfUKtazw9T6iTCAn")
+    }
+
+    override fun onLoaded(questions: List<Question>) {
+        //tvQuestion.text = listID.data[0].question
+
+    }
+
+
+    override fun onFail() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

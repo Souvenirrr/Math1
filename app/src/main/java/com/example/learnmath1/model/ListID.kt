@@ -4,13 +4,13 @@ import com.beust.klaxon.Klaxon
 
 private val klaxon = Klaxon()
 
-data class Question(
-    val answer: ArrayList<Answer>,
-    val question: String
+data class ListID (
+    val data: List<Content>
 ) {
+
     public fun toJson() = klaxon.toJsonString(this)
 
     companion object {
-        public fun fromJson(json: String) = klaxon.parse<Question>(json)
+        public fun fromJson(json: String) = klaxon.parse<ListID>(json)
     }
 }

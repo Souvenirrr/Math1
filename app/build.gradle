@@ -59,4 +59,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.3.0'
     implementation 'com.google.firebase:firebase-firestore-ktx:21.4.3'
     implementation 'com.beust:klaxon:5.0.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
