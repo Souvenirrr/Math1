@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tvNum"
                 android:layout_width="wrap_content"
@@ -31,12 +32,13 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:gravity="center_horizontal"
                 android:id="@+id/tvQuestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Câu hỏi thứ nhất "
+                android:text="@string/content_question"
                 android:textColor="#000000"
-                android:textSize="20sp"
+                android:textSize="40sp"
                 android:textStyle="italic" />
         </LinearLayout>
 
@@ -62,7 +64,7 @@
                 android:checked="false"
                 android:text="@string/answer1"
                 android:textColor="#1502c7"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -72,7 +74,7 @@
                 android:checked="false"
                 android:text="@string/answer2"
                 android:textColor="#1502c7"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -82,7 +84,7 @@
                 android:checked="false"
                 android:text="@string/answer3"
                 android:textColor="#1502c7"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -92,7 +94,7 @@
                 android:checked="false"
                 android:text="@string/answer4"
                 android:textColor="#1502c7"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </RadioGroup>
     </LinearLayout>

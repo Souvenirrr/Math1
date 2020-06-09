@@ -29,14 +29,23 @@ class QuestionFragment : Fragment(), DataListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         firebaseHandle.getDataByID("5ol2zfUKtazw9T6iTCAn")
+        // TODO recycle view handling
     }
 
     override fun onLoaded(questions: List<Question>) {
         Log.d("question", questions.toString())
-        TODO("Update UI")
+        for (i in 0 until 2) {
+            tvQuestion.text = questions[i].question
+            radA.text = questions[i].answer.value1.toString()
+            radB.text = questions[i].answer.value2.toString()
+            radC.text = questions[i].answer.value3.toString()
+            radD.text = questions[i].answer.value4.toString()
+        }
     }
 
     override fun onFail(exception: Exception) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        // TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
+
+
 }
