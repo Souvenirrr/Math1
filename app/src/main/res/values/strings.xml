@@ -26,6 +26,7 @@
     <string name="register">Đăng ký</string>
     <string name="password">Mật khẩu</string>
     <string name="rePassword">Nhập lại mật khẩu</string>
+    <string name="email">Email</string>
 
     <string name="home_second">Home Second</string>
     <string name="open">open</string>

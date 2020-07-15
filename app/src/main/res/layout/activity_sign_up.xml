@@ -27,11 +27,12 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/edtPass1"
@@ -46,7 +47,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail1" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail1"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnSignUp"
@@ -75,7 +77,8 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPass1" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPass1"
+        android:autofillHints="" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
