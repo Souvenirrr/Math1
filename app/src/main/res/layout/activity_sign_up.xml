@@ -6,16 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".activity.SignUpActivity">
 
-    <ImageView
+    <TextView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:contentDescription="logo"
+        android:text="@string/learn_math_1"
+        android:gravity="center_horizontal"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        />
 
     <EditText
         android:id="@+id/edtEmail1"
@@ -39,7 +41,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -54,7 +56,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/custom_button"
-        android:text="Đăng ký"
+        android:text="@string/register"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +71,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:hint="RePassword"
+        android:hint="@string/rePassword"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

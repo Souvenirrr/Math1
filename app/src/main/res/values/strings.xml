@@ -23,6 +23,9 @@
     <string name="complete">Hoàn thành</string>
     <string name="learn_math_1">Học toán 1</string>
     <string name="score">Số điểm: </string>
+    <string name="register">Đăng ký</string>
+    <string name="password">Mật khẩu</string>
+    <string name="rePassword">Nhập lại mật khẩu</string>
 
     <string name="home_second">Home Second</string>
     <string name="open">open</string>
