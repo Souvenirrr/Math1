@@ -20,6 +20,9 @@
     <string name="answer2">Đáp án 2</string>
     <string name="answer3">Đáp án 3</string>
     <string name="answer4">Đáp án 4</string>
+    <string name="complete">Hoàn thành</string>
+    <string name="learn_math_1">Học toán 1</string>
+    <string name="score">Số điểm: </string>
 
     <string name="home_second">Home Second</string>
     <string name="open">open</string>

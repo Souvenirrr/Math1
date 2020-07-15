@@ -7,16 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <ImageView
+    <TextView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:contentDescription="logo"
+        android:text="@string/learn_math_1"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_action_math1" />
+        />
 
     <EditText
         android:id="@+id/edtEmail"
@@ -41,6 +43,7 @@
         android:layout_marginEnd="24dp"
         android:background="@drawable/custom_button"
         android:text="Đăng nhập"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPass" />

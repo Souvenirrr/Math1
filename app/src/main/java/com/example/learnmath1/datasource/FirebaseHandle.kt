@@ -2,13 +2,14 @@ package com.example.learnmath1.datasource
 
 import android.content.ContentValues
 import android.util.Log
+import com.example.learnmath1.activity.QuestionActivity
 import com.example.learnmath1.model.Question
 import com.google.firebase.firestore.QueryDocumentSnapshot
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
 
-class FirebaseHandle(private val dataListener: DataListener) {
+class FirebaseHandle(private val dataListener: QuestionActivity) {
     private val db = Firebase.firestore
 
     fun getDataByID(id: String) {
